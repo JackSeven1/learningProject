@@ -14,10 +14,10 @@ import org.springframework.stereotype.Service;
 @Service
 public class AdminServiceimpl extends BaseService<User> implements AdminService {
     @Autowired
-    private adminDao adminDaoadminDao;
+    private adminDao adminDao;
 
     public ExecuteResult getlogin() {
-        adminDaoadminDao.getlogin();
+        adminDao.getlogin();
         return null;
     }
 }
