@@ -189,7 +189,7 @@ To change this template use File | Settings | File Templates.
                     </div>
 
                     <div class="paging">
-                        <a href="#" class="older">Older Post</i></a>
+                        <a href="#" class="older">Older Post</a>
                     </div>
                 </div>
                 <aside class="col-md-4 blog-aside">

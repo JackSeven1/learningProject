@@ -22,7 +22,7 @@
         <div class="nav_z">
             <ul id="navul" class="cl">
                 <li>
-                    <a href="#">登录</a>
+                    <a href="/jsp/login.jsp">登录</a>
                 </li>
                 <li>
                     <a href="#">注册</a>
