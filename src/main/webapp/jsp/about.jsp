@@ -1,4 +1,11 @@
-<!DOCTYPE html>
+<%--
+Created by IntelliJ IDEA.
+User: Administrator
+Date: 2017/5/16
+Time: 14:16
+To change this template use File | Settings | File Templates.
+--%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -8,7 +15,7 @@
 
     <!-- Bootstrap styles -->
     <link rel="stylesheet" href="/jsp/css/bootstrap.min.css">
- 
+
 
     <!-- Font-Awesome -->
     <link rel="stylesheet" href="/jsp/css/font-awesome/css/font-awesome.min.css">
@@ -19,16 +26,16 @@
     <!-- Styles -->
     <link rel="stylesheet" href="/jsp/css/style.css" id="theme-styles">
 
-    <!--[if lt IE 9]>      
+    <!--[if lt IE 9]>
         <script src="/jsp/js/vendor/google/html5-3.6-respond-1.1.0.min.js"></script>
     <![endif]-->
-    
+
 </head>
 <body>
     <header>
         <div class="widewrapper masthead">
             <div class="container">
-                <a href="index.html" id="logo">
+                <a href="index.jsp" id="logo">
                     <img src="../static/img/logo1.png" alt="clean Blog">
                 </a>
 
@@ -41,19 +48,19 @@
                 <nav class="pull-right clean-nav">
                     <div class="collapse navbar-collapse">
                         <ul class="nav nav-pills navbar-nav">
-                          
+
                              <li>
-                                <a href="index.html">Home</a>
+                                <a href="index.jsp">Home</a>
                             </li>
                             <li>
-                                <a href="about.html">About</a>
+                                <a href="about.jsp">About</a>
                             </li>
                             <li>
-                                <a href="contact.html">Contact</a>
-                            </li>                   
+                                <a href="contact.jsp">Contact</a>
+                            </li>
                         </ul>
                     </div>
-                </nav>        
+                </nav>
 
             </div>
         </div>
@@ -66,7 +73,7 @@
 
                 <div class="clean-searchbox">
                     <form action="#" method="get" accept-charset="utf-8">
-                       
+
                         <input class="searchfield" id="searchbox" type="text" placeholder="Search">
                          <button class="searchbutton" type="submit">
                             <i class="fa fa-search"></i>
@@ -84,7 +91,7 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui quo sint asperiores, ut doloremque eum commodi, odit nisi sed repellendus earum recusandae pariatur consectetur minus rerum, magni dolores officiis magnam.</p>
 
             <div class="about-button">
-                <a class="btn btn-xlarge btn-clean-one" href="contact.html">Contact Me</a>
+                <a class="btn btn-xlarge btn-clean-one" href="contact.jsp">Contact Me</a>
             </div>
             <hr>
         </div>
@@ -108,7 +115,7 @@
                             <li><a href="">Clean - Responsive HTML5 Template</a></li>
                             <li><a href="">Responsive Pricing Table</a></li>
                             <li><a href="">Yellow HTML5 Template</a></li>
-                
+
                         </ul>
                     </div>
 
@@ -121,7 +128,7 @@
                             <i class="fa fa-facebook"></i><i class="fa fa-twitter"></i><i class="fa fa-google"></i>
                         </div>
                     </div>
-                   
+
                 </div>
             </div>
         </div>
@@ -129,7 +136,7 @@
                 Copyright &copy; 2017.Company name All rights reserved.<a target="_blank" href="http://sc.chinaz.com/moban/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a>
         </div>
     </footer>
-    
+
     <script src="/jsp/js/jquery.min.js"></script>
     <script src="/jsp/js/bootstrap.min.js"></script>
     <script src="/jsp/js/modernizr.js"></script>

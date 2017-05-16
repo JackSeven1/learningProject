@@ -1,4 +1,11 @@
-<!DOCTYPE html>
+<%--
+Created by IntelliJ IDEA.
+User: Administrator
+Date: 2017/5/16
+Time: 14:16
+To change this template use File | Settings | File Templates.
+--%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -24,10 +31,11 @@
     
 </head>
 <body>
+<jsp:include page="common/top.jsp"></jsp:include>
     <header>
         <div class="widewrapper masthead">
             <div class="container">
-                <a href="index.html" id="logo">
+                <a href="index.jsp" id="logo">
                     <img src="../static/img/logo1.png" alt="clean Blog">
                 </a>
         
@@ -42,13 +50,13 @@
                         <ul class="nav nav-pills navbar-nav">
                           
                             <li>
-                                <a href="/jsp/index.html">主页</a>
+                                <a href="/jsp/index.jsp">主页</a>
                             </li>
                             <li>
-                                <a href="/jsp/about.html">关于</a>
+                                <a href="/jsp/about.jsp">关于</a>
                             </li>
                             <li>
-                                <a href="/jsp/contact.html">联系我</a>
+                                <a href="/jsp/contact.jsp">联系我</a>
                             </li>                        
                         </ul>
                     </div>
@@ -84,7 +92,7 @@
                             <article class=" blog-teaser">
                                 <header>
                                     <img src="../static/img/1.jpg" alt="">
-                                    <h3><a href="/jsp/single.html">How to Create Template</a></h3>
+                                    <h3><a href="/jsp/single.jsp">How to Create Template</a></h3>
                                     <span class="meta">19 August 2017, John Doe</span>
                                     <hr>
                                 </header>
@@ -95,7 +103,7 @@
                             <article class="blog-teaser">
                                 <header>
                                     <img src="../static/img/2.jpg" alt="">
-                                    <h3><a href="/jsp/single.html">Clean Personal Blog Template</a></h3>
+                                    <h3><a href="/jsp/single.jsp">Clean Personal Blog Template</a></h3>
                                     <span class="meta">19 August 2017, John Doe</span>
                                     <hr>
                                 </header>
@@ -109,7 +117,7 @@
                             <article class="blog-teaser">
                                 <header>
                                     <img src="../static/img/4.jpg" alt="">
-                                    <h3><a href="/jsp/single.html">Blackor - Responsive HTML5 Theme</a></h3>
+                                    <h3><a href="/jsp/single.jsp">Blackor - Responsive HTML5 Theme</a></h3>
                                     <span class="meta">19 August 2017, John Doe</span>
                                     <hr>
                                 </header>
@@ -120,7 +128,7 @@
                             <article class=" blog-teaser">
                                 <header>
                                     <img src="../static/img/1.jpg" alt="">
-                                    <h3><a href="/jsp/single.html">How to Create Template</a></h3>
+                                    <h3><a href="/jsp/single.jsp">How to Create Template</a></h3>
                                     <span class="meta">19 August 2017, John Doe</span>
                                     <hr>
                                 </header>
@@ -134,7 +142,7 @@
                             <article class="blog-teaser">
                                 <header>
                                     <img src="../static/img/3.jpg" alt="">
-                                    <h3><a href="/jsp/single.html">Blackor - Responsive HTML5 Theme</a></h3>
+                                    <h3><a href="/jsp/single.jsp">Blackor - Responsive HTML5 Theme</a></h3>
                                     <span class="meta">19 August 2017, John Doe</span>
                                     <hr>
                                 </header>
@@ -145,7 +153,7 @@
                             <article class=" blog-teaser">
                                 <header>
                                     <img src="../static/img/1.jpg" alt="">
-                                    <h3><a href="/jsp/single.html">How to Create Template</a></h3>
+                                    <h3><a href="/jsp/single.jsp">How to Create Template</a></h3>
                                     <span class="meta">19 August 2017, John Doe</span>
                                     <hr>
                                 </header>
@@ -159,7 +167,7 @@
                             <article class="blog-teaser">
                                 <header>
                                     <img src="../static/img/3.jpg" alt="">
-                                    <h3><a href="/jsp/single.html">Blackor - Responsive HTML5 Theme</a></h3>
+                                    <h3><a href="/jsp/single.jsp">Blackor - Responsive HTML5 Theme</a></h3>
                                     <span class="meta">19 August 2017, John Doe</span>
                                     <hr>
                                 </header>
@@ -170,7 +178,7 @@
                             <article class=" blog-teaser">
                                 <header>
                                     <img src="../static/img/5.jpg" alt="">
-                                    <h3><a href="/jsp/single.html">How to Create Template</a></h3>
+                                    <h3><a href="/jsp/single.jsp">How to Create Template</a></h3>
                                     <span class="meta">19 August 2017, John Doe</span>
                                     <hr>
                                 </header>

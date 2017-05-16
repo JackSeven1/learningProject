@@ -1,4 +1,11 @@
-<!DOCTYPE html>
+<%--
+Created by IntelliJ IDEA.
+User: Administrator
+Date: 2017/5/16
+Time: 14:16
+To change this template use File | Settings | File Templates.
+--%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -28,7 +35,7 @@
     <header>
         <div class="widewrapper masthead">
             <div class="container">
-                <a href="index.html" id="logo">
+                <a href="index.jsp" id="logo">
                     <img src="../static/img/logo1.png" alt="clean Blog">
                 </a>
 
@@ -43,13 +50,13 @@
                         <ul class="nav nav-pills navbar-nav">
                           
                              <li>
-                                <a href="index.html">Home</a>
+                                <a href="index.jsp">Home</a>
                             </li>
                             <li>
-                                <a href="about.html">About</a>
+                                <a href="about.jsp">About</a>
                             </li>
                             <li>
-                                <a href="contact.html">Contact</a>
+                                <a href="contact.jsp">Contact</a>
                             </li>                       
                         </ul>
                     </div>
