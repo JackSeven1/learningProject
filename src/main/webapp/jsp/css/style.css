@@ -7,7 +7,7 @@ body {
   background-color: #fff;
   padding: 50px 100px;
   background-color: #ddd; 
-  background: url(../../js/bgc.jpg) no-repeat;
+  background: url(../../static/img/bgc.jpg) no-repeat;
   background-size: cover;
   background-attachment: fixed;
 }
