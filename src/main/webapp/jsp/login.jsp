@@ -11,7 +11,8 @@ To change this template use File | Settings | File Templates.
 
 <title>Wopop</title>
 <link href="../static/CSS/style_log.css" rel="stylesheet" type="text/css">
-
+<script src="/jsp/js/jquery.min.js"></script>
+ <script src="/jsp/common/js/ajax.js"></script>
 </head>
 
 <body class="login" mycollectionplug="bind">
@@ -29,10 +30,6 @@ To change this template use File | Settings | File Templates.
   <label>
     <input type="password" name="textfield2" id="userpwd" class="txt_input" onfocus="if (value ==&#39;******&#39;){value =&#39;&#39;}" onblur="if (value ==&#39;&#39;){value=&#39;******&#39;}" value="******">
   </label>
- 
- 
-
- 
   <p class="forgot"><a id="iforget" href="javascript:void(0);">忘记密码?</a></p>
   <div class="rem_sub">
   <div class="rem_sub_l">
@@ -40,34 +37,11 @@ To change this template use File | Settings | File Templates.
    <label for="checkbox">记住密码</label>
    </div>
     <label>
-      <input type="submit" class="sub_button" name="button" id="button" value="SIGN-IN" style="opacity: 0.7;">
+      <input type="submit" class="sub_button" name="button" id="login" onclick="loginAjax()" value="登录" style="opacity: 0.7;">
     </label>
   </div>
 </div>
 
-
-<div id="forget_model" class="login_padding" style="display:none">
-<br>
-
-   <h1>Forgot password</h1>
-   <br>
-   <div class="forget_model_h2">(Please enter your registered email below and the system will automatically reset users’ password and send it to user’s registered email address.)</div>
-    <label>
-    <input type="text" id="usrmail" class="txt_input txt_input2">
-   </label>
-
- 
-  <div class="rem_sub">
-  <div class="rem_sub_l">
-   </div>
-    <label>
-     <input type="submit" class="sub_buttons" name="button" id="Retrievenow" value="Retrieve now" style="opacity: 0.7;">
-     　　　
-     <input type="submit" class="sub_button" name="button" id="denglou" value="Return" style="opacity: 0.7;">　　
-    
-    </label>
-  </div>
-</div>
     <div class="line"></div>
     <div class="third-part tracking-ad">
         <span>第三方平台登录</span>
@@ -78,13 +52,32 @@ To change this template use File | Settings | File Templates.
         </div>
     </div>
 
-
-
 <!--login_padding  Sign up end-->
 </div><!--login_boder end-->
 </div><!--login_m end-->
- <br> <br>
+</body>
+<script>
+    function loginAjax() {
+        var user ={
+            username :$("#username").val(),
+            password :$("#userpwd").val()
+        }
+        $.ajax({
+            type: "post",
+            data: user,
+            url: "/user/login",
+            dataType: "json",
+            success: function(d){
+                alert("sss")
+                alert(JSON.stringify(d))
+            }
+        });
+//        $.ajaxPost("/user/login",user,function (success) {
+//            alert("成功！")
+//        },function (err) {
+//            alert(JSON.stringify(err))
+//        })
+    }
 
-
-
-</body></html>
+</script>
+</html>

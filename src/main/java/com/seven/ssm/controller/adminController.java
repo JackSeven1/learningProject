@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 /**
  * Created by douqi on 2017/4/20.
@@ -30,10 +31,18 @@ public class adminController {
 
 
     @RequestMapping("/login")
+    @ResponseBody
     public ExecuteResult login(@ModelAttribute User user){
         ExecuteResult executeResult=new ExecuteResult();
-        adminService.getlogin();
-         return executeResult;
+        try {
+            executeResult.setIsSuccee(true);
+            executeResult.setDes("sss");
+        }catch (Exception e){
+
+        }finally {
+            return executeResult;
+        }
+
     }
 
 }
