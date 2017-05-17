@@ -68,9 +68,15 @@ To change this template use File | Settings | File Templates.
     </label>
   </div>
 </div>
-
-
-
+    <div class="line"></div>
+    <div class="third-part tracking-ad">
+        <span>第三方平台登录</span>
+        <div class="loginlogos">
+            <div ><img src="/static/img/qq.png" class="qqlogo" ></div>
+            <div ><img src="/static/img/weixin.png" class="weixinlogo"></div>
+            <div ><img src="/static/img/xinlang.png" class="xinlanglogo"></div>
+        </div>
+    </div>
 
 
 

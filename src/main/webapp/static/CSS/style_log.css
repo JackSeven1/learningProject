@@ -117,7 +117,7 @@ html{-webkit-text-size-adjust:none;}
 /*--login--*/
 .login_m{ width:403px; margin:0 auto; height:375px; margin-top:98px; /*position: absolute;left:50%;top:50%;margin-left:-202px;margin-top:-188px;*/}
 .login_logo{ text-align:center; margin-bottom:25px;}
-.login_boder{ background: url(/static/img/login_m_bg.png) no-repeat; height:302px; overflow:hidden;}
+.login_boder{ background: url(/static/img/login_m_bg.png) no-repeat; height:450px; overflow:hidden;background-size: 100% 100%;}
 .login_padding{ padding:28px 47px 20px 47px ;}
 .login_boder h2{ color:#4f5d80; text-transform:uppercase; font-size:12px; font-weight:normal; margin-bottom:11px;}
 .forget_model_h2{color:#4f5d80; font-size:12px; font-weight:normal; margin-bottom:11px;}
@@ -128,8 +128,13 @@ html{-webkit-text-size-adjust:none;}
 .login_boder p.forgot{ font-size:11px;  text-align:right; margin-bottom:15px;}
 .login_boder p.forgot a,.login_boder p.forgot a:visited{color:#8c8e91;}
 .login_boder p.forgot a:hover{color:#206fd5;}
+.login_boder .line {  background: #ADADAD;  height: 1px;  margin-top: 40px;margin-left: 13px; margin-right: 13px;}
+.login_boder .third-part{padding: 20px 52px 35px 70px}
+.login_boder .loginlogos{padding-top: 14px}
+.qqlogo{width: 40px;height: 40px ;float: left}
+.weixinlogo{width: 40px;height: 40px;float: left ;margin-left: 20%}
+.xinlanglogo{width: 40px;height: 40px;float: left ;margin-left: 20%}
 .rem_sub input.sub_button{ float:right; width:122px; height:32px; background:url(/static/img/site_bg.png) no-repeat -153px -850px; border:none; color:#FFF; padding-bottom:2px; font-size:14px; font-weight:bold;}
-
 .rem_sub input.sub_buttons{ float:left; width:122px;  height:32px; background:url(/static/img/site_bg.png) no-repeat -153px -850px; border:none; color:#FFF; padding-bottom:2px; font-size:14px; font-weight:bold;}
 .rem_sub input.sub_buttons:hover{ background-position:-153px -882px; cursor:pointer;}
 

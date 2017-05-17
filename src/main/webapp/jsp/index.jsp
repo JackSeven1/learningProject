@@ -35,7 +35,7 @@ To change this template use File | Settings | File Templates.
     <header>
         <div class="widewrapper masthead">
             <div class="container">
-                <a href="index.jsp" id="logo">
+                <a href="/jsp/index.jsp" id="logo">
                     <img src="../static/img/logo1.png" alt="clean Blog">
                 </a>
         
