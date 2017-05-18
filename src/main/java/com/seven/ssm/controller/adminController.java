@@ -10,6 +10,10 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
 /**
  * Created by douqi on 2017/4/20.
  */
@@ -32,10 +36,10 @@ public class adminController {
 
     @RequestMapping("/login")
     @ResponseBody
-    public ExecuteResult login(@ModelAttribute User user){
+    public ExecuteResult login(HttpServletRequest request,@ModelAttribute User user){
         ExecuteResult executeResult=new ExecuteResult();
         try {
-           executeResult = adminService.checkLogin(user);
+           executeResult = adminService.checkLogin(user,request.getSession());
         }catch (Exception e){
 
         }finally {

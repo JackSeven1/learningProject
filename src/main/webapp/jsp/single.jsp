@@ -32,6 +32,7 @@ To change this template use File | Settings | File Templates.
     
 </head>
 <body>
+<jsp:include page="common/top.jsp"></jsp:include>
     <header>
         <div class="widewrapper masthead">
             <div class="container">

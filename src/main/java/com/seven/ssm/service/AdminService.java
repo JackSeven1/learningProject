@@ -5,6 +5,9 @@ import com.seven.ssm.common.model.ExecuteResult;
 import com.seven.ssm.common.service.IBaseService;
 import com.seven.ssm.entity.User;
 
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
 /**
  * Created by douqi on 2017/4/20.
  */
@@ -12,5 +15,5 @@ import com.seven.ssm.entity.User;
 public interface AdminService extends IBaseService<User> {
 
 
-    public ExecuteResult checkLogin(User user);
+    public ExecuteResult checkLogin(User user,HttpSession session);
 }

@@ -6,8 +6,12 @@ import com.seven.ssm.dao.adminDao;
 import com.seven.ssm.entity.User;
 import com.seven.ssm.service.AdminService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
 import org.apache.log4j.Logger;
+import org.springframework.stereotype.Service;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 
 /**
@@ -15,17 +19,22 @@ import org.apache.log4j.Logger;
  */
 @Service
 public class AdminServiceimpl extends BaseService<User> implements AdminService {
+
+    private static Logger logger = Logger.getLogger(AdminServiceimpl.class);
+
+    private HttpServletResponse response;
     @Autowired
     private adminDao adminDao;
-    private static Logger logger = Logger.getLogger(AdminServiceimpl.class);
-    public ExecuteResult checkLogin(User user) {
+    public ExecuteResult checkLogin(User user,HttpSession session) {
         ExecuteResult executeResult = new ExecuteResult();
         try {
            int i =  adminDao.findUserNameByCount(user);
            if (i!=0){
                User user1 = adminDao.checkLogin(user);
                if (user1!=null){
+                   //保持用户登录
                    executeResult.setIsSuccee(true);
+                   session.setAttribute("userId",user1.getId());
                    executeResult.setDes("成功");
                }else {
                    executeResult.setIsSuccee(false);
