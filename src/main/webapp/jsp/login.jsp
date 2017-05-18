@@ -67,9 +67,12 @@ To change this template use File | Settings | File Templates.
             data: user,
             url: "/user/login",
             dataType: "json",
-            success: function(d){
-                alert("sss")
-                alert(JSON.stringify(d))
+            success: function(data){
+                if (data.isSuccee){
+                    window.location.href="/jsp/index.jsp"
+                }else {
+                    alert(data.des)
+                }
             }
         });
 //        $.ajaxPost("/user/login",user,function (success) {

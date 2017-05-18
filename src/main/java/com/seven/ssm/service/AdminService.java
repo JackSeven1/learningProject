@@ -12,5 +12,5 @@ import com.seven.ssm.entity.User;
 public interface AdminService extends IBaseService<User> {
 
 
-    public ExecuteResult getlogin();
+    public ExecuteResult checkLogin(User user);
 }

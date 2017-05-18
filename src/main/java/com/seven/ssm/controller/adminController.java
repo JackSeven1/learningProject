@@ -35,14 +35,12 @@ public class adminController {
     public ExecuteResult login(@ModelAttribute User user){
         ExecuteResult executeResult=new ExecuteResult();
         try {
-            executeResult.setIsSuccee(true);
-            executeResult.setDes("sss");
+           executeResult = adminService.checkLogin(user);
         }catch (Exception e){
 
         }finally {
             return executeResult;
         }
-
     }
 
 }
